@@ -7,10 +7,11 @@
 	--medium-brown: #945c44;
 	--coffee-brown: #67412e;
 	--black: #0f0a06;
+	--gold: #ffbf00;
 }
 
 body {
-	background-color: var(--coffee-brown);
+	background-color: var(--dark-brown);
 	font-family: 'Noto Sans';
 	color: var(--cream);
 }
@@ -81,7 +82,7 @@ header .contact {
 	font-family: 'Cookie';
 }
 
-main > div:last-child {
+main.home > div:last-child {
 	display: flex;
 	flex-direction: column;
 	gap: 2.5rem;
@@ -89,11 +90,11 @@ main > div:last-child {
 	padding: 6rem;
 }
 
-main > div:last-child > p {
+main.home > div:last-child > p {
 	font-size: 3.5rem;
 }
 
-main > div:last-child > div {
+main.home > div:last-child > div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -101,13 +102,82 @@ main > div:last-child > div {
 	gap: 1rem;
 }
 
-main > div:last-child > div > div {
+main.home > div:last-child > div > div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-main > div:last-child > div > div :first-child {
+main.home > div:last-child > div > div :first-child {
 	font-weight: 600;
 	font-size: 1.1em;
 	margin-bottom: -0.5rem;
+}
+
+main.menu .hero > p:first-child,
+.card h3 {
+	color: var(--gold);
+}
+
+.card h3 {
+	font-size: 2.5rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+
+.card > div {
+	margin-bottom: 1rem;
+}
+
+.card > div > p:first-child {
+	font-size: 1.4rem;
+	display: flex;
+	align-items: center;
+}
+
+.card > div > p:last-child {
+	font-size: 1.2rem;
+	font-weight: 200;
+}
+
+main.menu .hero {
+	background-image: url('./assets/menu.jpg');
+}
+
+main.menu .cards {
+	padding: 10rem 10rem;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(33rem, 1fr));
+	gap: 5rem 7rem;
+	place-content: center;
+}
+
+span.underline {
+	display: inline-block;
+	background-color: var(--gold);
+	height: 1.5px;
+	flex: 1;
+	margin: 0 1.4rem;
+	position: relative;
+}
+
+span.underline::before {
+	content: '';
+	border-radius: 50%;
+	border: 1.5px solid var(--gold);
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	transform: translate(-100%, -50%);
+	left: 0;
+}
+
+span.underline::after {
+	content: ' ';
+	border-radius: 50%;
+	border: 1.5px solid var(--gold);
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	right: 0;
+	transform: translate(100%, -50%);
 }
