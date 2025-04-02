@@ -1,46 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-    --cream: #f5f1e8;
-    --brown: #d9b9a0;
+	--cream: #f5f1e8;
+	--brown: #d9b9a0;
+	--dark-brown: #3a2617;
+	--medium-brown: #945c44;
+	--coffee-brown: #67412e;
+	--black: #0f0a06;
 }
 
 body {
-    background-color: var(--cream);
+	background-color: var(--coffee-brown);
+	font-family: 'Noto Sans';
+	color: var(--cream);
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4rem;
-    /* border: 2px solid red; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.4rem 4rem;
 }
 
 header div:first-child {
-    width: 13rem;
-    height: 9rem;
-    background-image: url('./assets/logo.png');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+	width: 13rem;
+	height: 9rem;
+	background-image: url('./assets/logo.png');
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 header button {
-    border: none;
-    background-color: inherit;
-    cursor: pointer;
-    font-size: 1.7rem;
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+	font-weight: 500;
+	color: var(--cream);
+	padding: 0 2rem;
+}
+
+header button:focus {
+	border: 2px solid var(--black);
+	outline: none;
 }
 
 header div:last-child {
-    display: flex;
-    gap: 3rem;
+	display: flex;
+	gap: 3rem;
 }
 
 header .contact {
-    border-radius: 3rem;
-    color: white;
-    font-weight: 500;
-    background-color: var(--brown);
-    padding: 1.4rem 2.8rem;
-    font-size: 1.6rem;
+	border-radius: 3rem;
+	background-color: var(--brown);
+	padding: 1.4rem 2.8rem;
+}
+
+.hero {
+	background-image: url('./assets/cafe.jpg');
+	background-size: 100%;
+	background-position: center;
+	height: 43rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-weight: 500;
+	font-size: 4rem;
+	gap: 4rem;
+	background-repeat: no-repeat;
+}
+
+.hero p:first-child {
+	letter-spacing: 0.5rem;
+}
+
+.hero p:last-child {
+	font-weight: 100;
+	font-family: 'Cookie';
+}
+
+main > div:last-child {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+	align-items: center;
+	padding: 6rem;
+}
+
+main > div:last-child > p {
+	font-size: 3.5rem;
+}
+
+main > div:last-child > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 200;
+	gap: 1rem;
+}
+
+main > div:last-child > div > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+main > div:last-child > div > div :first-child {
+	font-weight: 600;
+	font-size: 1.1em;
+	margin-bottom: -0.5rem;
 }
