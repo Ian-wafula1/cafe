@@ -26,7 +26,7 @@ header {
 header div:first-child {
 	width: 13rem;
 	height: 9rem;
-	background-image: url('./assets/logo.png');
+	background-image: url('../assets/logo.png');
 	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -58,7 +58,7 @@ header .contact {
 }
 
 .hero {
-	background-image: url('./assets/cafe.jpg');
+	background-image: url('../assets/cafe.jpg');
 	background-size: 100%;
 	background-position: center;
 	height: 43rem;
@@ -140,7 +140,7 @@ main.menu .hero > p:first-child,
 }
 
 main.menu .hero {
-	background-image: url('./assets/menu.jpg');
+	background-image: url('../assets/menu.jpg');
 }
 
 main.menu .cards {
@@ -190,7 +190,7 @@ main.about {
 }
 
 main.about > div {
-    background-image: url('./assets/about.jpg');
+    background-image: url('../assets/about.jpg');
     width: 40rem;
     height: 100%;
     background-position: center;
