@@ -59,9 +59,9 @@ header .contact {
 
 .hero {
 	background-image: url('../assets/cafe.jpg');
-	background-size: 100%;
+	background-size: cover;
 	background-position: center;
-	height: 43rem;
+	min-height: 43rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -71,6 +71,7 @@ header .contact {
 	font-size: 4rem;
 	gap: 4rem;
 	background-repeat: no-repeat;
+	text-align: center;
 }
 
 .hero p:first-child {
@@ -80,6 +81,7 @@ header .contact {
 .hero p:last-child {
 	font-weight: 100;
 	font-family: 'Cookie';
+	line-height: 3;
 }
 
 main.home > div:last-child {
@@ -146,7 +148,7 @@ main.menu .hero {
 main.menu .cards {
 	padding: 10rem 10rem;
 	display: grid;
-	grid-template-columns: repeat(2, minmax(33rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
 	gap: 5rem 7rem;
 	place-content: center;
 }
