@@ -1,7 +1,7 @@
 
 # Café des Rêves
 
-Website for the best and most cozy cafe in Nairobi and Nakuru, Kenya.
+Website for the best and most cosy cafe in Nairobi and Nakuru, Kenya.
 
 ## 🚀 Live Site
 https://ian-wafula1.github.io/cafe/
@@ -13,7 +13,7 @@ https://ian-wafula1.github.io/cafe/
 
 ```cd cafe```
 
-3. Run `npm install` to install the necessary dependancies.
+3. Run `npm install` to install the necessary dependencies.
 
 4. Run `npx webpack serve` and open the provided link (usually `localhost:8080`) in your browser.
 
