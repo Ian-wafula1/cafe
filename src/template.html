@@ -8,151 +8,16 @@
 	<body>
 		<header>
 			<div></div>
-			<div>
-				<button data-index="0">Home</button>
-				<button data-index="1">Café Menu</button>
-				<button data-index="2">About</button>
-				<button data-index="3" class="contact">Contact us</button>
+			<div id="buttons">
+				<button class="button" id="home">Home</button>
+				<button class="button" id="menu">Café Menu</button>
+				<button class="button" id="about">About</button>
+				<button id="contact" class="contact button">Contact us</button>
 			</div>
 		</header>
 
 		<div id="content">
-			<main class="home">
-				<div class="hero">
-					<p>GOOD TIMES</p>
-					<p>Great coffee</p>
-				</div>
-
-				<div>
-					<p>serving coffee everyday</p>
-					<div>
-						<div>
-							<p>Nairobi</p>
-							<p>Waiyaki way</p>
-						</div>
-						<div>
-							<p>Nakuru</p>
-							<p>Jomo Kenyatta Avenue</p>
-						</div>
-						<div>
-							<p>Hours</p>
-							<p>Monday-Thursday: 8am-7pm</p>
-							<p>Friday-Sunday: 8am-9pm</p>
-						</div>
-					</div>
-				</div>
-			</main>	
-
-			<main class="menu">
-				<div class="hero">
-					<p>DISCOVER</p>
-					<p>Our Coffee Menu</p>
-				</div>
-
-				<div class="cards">
-					<div class="card">
-						<h3>Classics</h3>
-						<div>
-							<p><span>Latte</span><span class="underline"></span><span>sh.500</span></p>
-							<p></p>
-						</div>
-						<div>
-							<p><span>Cappuccino</span><span class="underline"></span><span>sh.500</span></p>
-							<p></p>
-						</div>
-						<div>
-							<p><span>Espresso</span><span class="underline"></span><span>sh.500</span></p>
-							<p></p>
-						</div>
-					</div>
-					<div class="card">
-						<h3>Signature Drinks</h3>
-						<div>
-							<p><span>Cocoa Cappuccino</span><span class="underline"></span><span>sh.500</span></p>
-							<p>dark chocolate dusted cappuccino</p>
-						</div>
-						<div>
-							<p><span>Espresso Tonic</span><span class="underline"></span><span>sh.500</span></p>
-							<p>extra shot espresso, ice, tonic water, lemon</p>
-						</div>
-						<div>
-							<p><span>Tasting Flight</span><span class="underline"></span><span>sh.500</span></p>
-							<p>three pours of today's featured coffees - or - one coffee prepared three different ways</p>
-						</div>
-					</div>
-					<div class="card">
-						<h3>Seasonal Drinks</h3>
-						<div>
-							<p><span>Vanilla Lavender Latte</span><span class="underline"></span><span>sh.500</span></p>
-							<p>espresso, milk, and our seasonal vanilla syrup infused with lavender and honey</p>
-						</div>
-						<div>
-							<p><span>Earl Greyhound</span><span class="underline"></span><span>sh.500</span></p>
-							<p>cascara, grapefruit, tarragon, earl grey, elderflower tonic, mint</p>
-						</div>
-						<div>
-							<p><span>Matcha Latte</span><span class="underline"></span><span>sh.500</span></p>
-							<p>organic stone milled matcha by song tea, milk</p>
-						</div>
-					</div>
-					<div class="card">
-						<h3>Tea by Song Tea</h3>
-						<div>
-							<p><span>Snow Jasmine / Green / Sichuan, China</span><span class="underline"></span><span>sh.500</span></p>
-							<p>sweet nectar, lily</p>
-						</div>
-						<div>
-							<p><span>Meadow / Caffeine-Free Botanical / San Francisco</span><span class="underline"></span><span>sh.500</span></p>
-							<p>tarragon, lemongrass, spearmint</p>
-						</div>
-					</div>
-				</div>
-			</main>
-
-			<main class="about">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vestibulum auctor sapien in nulla vulputate, nec gravida felis fermentum. Curabitur at nisi eget lacus vestibulum hendrerit. Integer vitae purus id ligula luctus
-					gravida. Duis euismod, odio et scelerisque vehicula, justo nisl vestibulum lectus, et faucibus urna arcu id purus. Phasellus euismod tortor eget justo ultricies, id dignissim neque ultrices. Fusce eu arcu ut elit imperdiet hendrerit in vel
-					ligula. Morbi sagittis, enim non egestas feugiat, purus justo interdum justo, eget bibendum dolor elit et lacus. Aenean at elit ac ligula fermentum ullamcorper vel in ipsum. In hac habitasse platea dictumst. Vivamus vehicula, ligula nec
-					suscipit gravida, sapien lacus gravida ligula, non fermentum justo magna ut orci. Donec tincidunt nulla ut justo ultricies, id pharetra nisi suscipit. Suspendisse potenti. Maecenas ac tincidunt eros.
-				</p>
-				<div></div>
-			</main>
-
-			<main class="contact">
-				<h1>Let's talk</h1>
-				<div>
-					<div>
-						<h2>Café des Rêves</h2>
-						<div>
-							<h4>Nairobi</h4>
-							<p>Waiyaki way</p>
-							<p>Nairobi, WW 96218</p>
-						</div>
-						<div>
-                            <h4>Nakuru</h4>
-							<p>Jomo Kenyatta Avenue</p>
-							<p>Nakuru, DK 42112</p>
-                        </div>
-						<div>
-                            <p>+254 712345678</p>
-                            <p>noreply@cafeDesReves.com</p>
-                        </div>
-					</div>
-
-					<form>
-                        <div>
-                            <label for="firstName">First Name (required) <input required placeholder="John" type="text" name="firstName" id="firstName"></label>
-                            <label for="lastName">Last Name (required) <input required placeholder="Doe" type="text" name="lastName" id="lastName"></label>
-                        </div>
-                        <label for="email">Email (required) <input required placeholder="johndoe@example.com" type="email" name="email" id="email" required></label>
-                        <label for="message">Enter a message (required)
-                            <textarea required name="message" id="message"></textarea>
-                        </label>
-                        <input type="submit">
-                    </form>
-				</div>
-			</main>
+			
 		</div>
 	</body>
 </html>

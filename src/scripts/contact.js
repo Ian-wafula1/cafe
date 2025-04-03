@@ -39,6 +39,7 @@ export default function loadContact() {
                         </label>
                         <input type="submit">
             `
+            form.addEventListener('submit', e => e.preventDefault())
             return form
         })()
     ))
